@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kali/PycharmProjects/utumno/6/test/main.c
+stdio.h
+-
+stdio.h
+-
+stdlib.h
+-
+sys/types.h
+-
+string.h
+-
+
