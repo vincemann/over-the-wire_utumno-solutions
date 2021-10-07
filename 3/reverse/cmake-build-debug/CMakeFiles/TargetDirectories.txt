@@ -1,3 +1,4 @@
 /home/kali/PycharmProjects/utumno/3/reverse/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/kali/PycharmProjects/utumno/3/reverse/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kali/PycharmProjects/utumno/3/reverse/cmake-build-debug/CMakeFiles/program.dir
 /home/kali/PycharmProjects/utumno/3/reverse/cmake-build-debug/CMakeFiles/reverse.dir

@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/reverse.dir/reverse.c.o -o reverse 
+/usr/bin/cc -g -m32 -no-pie -fno-stack-protector CMakeFiles/reverse.dir/reverse.c.o -o reverse 

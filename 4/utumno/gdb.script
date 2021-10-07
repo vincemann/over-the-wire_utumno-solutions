@@ -1,0 +1,13 @@
+
+set disassembly-flavor intel   
+set follow-fork-mode child
+unset env
+show env
+
+b *main
+# memcpy
+b *0x08048491
+
+
+r `cat amount_to_copy` `cat payload`
+

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kali/PycharmProjects/utumno/3/reverse/program.c
+string.h
+/home/kali/PycharmProjects/utumno/3/reverse/string.h
+stdio.h
+-
+stdlib.h
+-
+

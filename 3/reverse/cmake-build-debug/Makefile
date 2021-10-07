@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named program
+
+# Build rule for target.
+program: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 program
+.PHONY : program
+
+# fast build rule for target.
+program/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/build
+.PHONY : program/fast
+
+#=============================================================================
 # Target rules for targets named reverse
 
 # Build rule for target.
@@ -141,6 +154,33 @@ reverse: cmake_check_build_system
 reverse/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reverse.dir/build.make CMakeFiles/reverse.dir/build
 .PHONY : reverse/fast
+
+program.o: program.c.o
+
+.PHONY : program.o
+
+# target to build an object file
+program.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/program.c.o
+.PHONY : program.c.o
+
+program.i: program.c.i
+
+.PHONY : program.i
+
+# target to preprocess a source file
+program.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/program.c.i
+.PHONY : program.c.i
+
+program.s: program.c.s
+
+.PHONY : program.s
+
+# target to generate assembly for a file
+program.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/program.c.s
+.PHONY : program.c.s
 
 reverse.o: reverse.c.o
 
@@ -177,7 +217,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... program"
 	@echo "... reverse"
+	@echo "... program.o"
+	@echo "... program.i"
+	@echo "... program.s"
 	@echo "... reverse.o"
 	@echo "... reverse.i"
 	@echo "... reverse.s"
