@@ -1,0 +1,66 @@
+
+set disassembly-flavor intel   
+set follow-fork-mode child
+# alias gil = disassemble
+set print pretty on
+set print array on
+
+
+define show_ret
+x/2wx $ebp
+end
+
+define show_args
+x/3wx $esp
+end
+
+define nextt
+si
+finish
+end
+
+# find env vars
+define show_stack
+x/20wx $ebp
+end
+
+
+
+
+
+
+
+
+
+
+
+
+unset env
+show env
+
+define show_buf
+p/x *jbp
+end
+
+define show_buf_stack
+p/x *(jmp_buf *)0xffffcd7c
+end
+
+# b *vuln
+# b *_setjmp
+
+
+# call strcpy
+b *0x80484e8
+b *longjmp
+# after long jmp
+b *0x080484d5
+
+
+r "`cat ./payload`"
+
+
+# long jump
+b *0xf7dfab80
+
+

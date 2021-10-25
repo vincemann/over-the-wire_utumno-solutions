@@ -1,0 +1,48 @@
+{
+    __jmpbuf = {
+      0x1a,
+      0xf7fabf20,
+      0xf7fdd2e5,
+      0x804821c,
+      0xf7e4354b,
+      0x1a
+    },
+    __mask_was_saved = 0xa,
+    __saved_mask = {
+      __val = {
+        0x19,
+        0xffffce1c,
+        0xf7e41f97,
+        0xf7fabd20,
+        0x80485d0,
+        0xf7fabd20,
+        0xf7e42423,
+        0xf7fabd20,
+        0x804a1a0,
+        0x1a,
+        0x1,
+        0x1,
+        0x0,
+        0xf7e42f79,
+        0xf7fac5e0,
+        0xf7fabd20,
+        0x19,
+        0xffffce1c,
+        0xf7e3660b,
+        0xf7fabd20,
+        0xa,
+        0x19,
+        0xf7fab3fc,
+        0xf7fe26e9,
+        0xf7fab000,
+        0xf7fabdbc,
+        0x19,
+        0xffffce28,
+        0xf7fe88f0,
+        0xffffce64,
+        0x0,
+        0xf7fab000
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 from lib.exploit import *
 
 
+# ONLY WORKS IN GDB, del breakpoints before continuing into shellcode
+
 gdb_script = '''
 set disassembly-flavor intel   
 alias gil = disassemble
